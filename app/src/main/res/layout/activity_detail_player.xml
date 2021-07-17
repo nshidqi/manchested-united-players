@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailPlayerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin">
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/img_profile"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true">
+            <TextView
+                style="@style/TextTitle.Large"
+                android:id="@+id/tv_data_number"
+                android:text="Number"
+                android:layout_marginRight="8dp"/>
+            <TextView
+                style="@style/TextTitle.Large.Bold"
+                android:id="@+id/tv_data_name"
+                android:text="Name"
+                android:layout_marginRight="8dp"/>
+            <TextView
+                style="@style/TextTitle.Italic"
+                android:id="@+id/tv_data_position"
+                android:text="Position"
+                android:layout_marginRight="8dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="?android:attr/listDivider"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+    <TextView
+        style="@style/TextRemarks"
+        android:text="Player's Remarks"
+        android:id="@+id/tv_data_remarks"
+        android:gravity="center"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+            <TextView
+                style="@style/TextProfile.Field"
+                android:text="Nationality"/>
+            <TextView
+                style="@style/TextProfile.Value"
+                android:text="Player's Nationality"
+                android:id="@+id/tv_data_nationality"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+            <TextView
+                style="@style/TextProfile.Field"
+                android:text="Age"/>
+            <TextView
+                style="@style/TextProfile.Value"
+                android:text="Player's Age"
+                android:id="@+id/tv_data_age"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+            <TextView
+                style="@style/TextProfile.Field"
+                android:text="Date of Birth"/>
+            <TextView
+                style="@style/TextProfile.Value"
+                android:text="Player's DoB"
+                android:id="@+id/tv_data_birth"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+            <TextView
+                style="@style/TextProfile.Field"
+                android:text="Height"/>
+            <TextView
+                style="@style/TextProfile.Value"
+                android:text="Player's Height"
+                android:id="@+id/tv_data_height"/>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
